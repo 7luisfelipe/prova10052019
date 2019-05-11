@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activity2">
+
+    <EditText android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:inputType="number"
+              android:id="@+id/edtIdade"
+              android:text="@string/idade"
+    />
+
+    <RadioGroup android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtIdade"
+                android:layout_marginTop="10dp"
+                android:id="@+id/rgSexo"
+    >
+        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                     android:text="@string/masculino"
+                     android:id="@+id/rdMasc"
+        />
+        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                     android:text="@string/feminino"
+                     android:id="@+id/rdFem"
+        />
+        />
+    </RadioGroup>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@+id/rgSexo"
+            android:layout_marginTop="2dp"
+    />
+
+    <RadioGroup android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rgSexo"
+                android:layout_marginTop="8dp"
+                android:id="@+id/rgEscolaridade"
+    >
+        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                     android:text="@string/analfabeto"
+                     android:id="@+id/rdAnalfabeto"
+        />
+        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                     android:text="@string/ensinoMedio"
+                     android:id="@+id/rdEnsinoMedio"
+        />
+        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                     android:text="@string/graduacao"
+                     android:id="@+id/rdGraduacao"
+        />
+        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                     android:text="@string/posGraduacao"
+                     android:id="@+id/rdPosGraduacao"
+        />
+        />
+    </RadioGroup>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@+id/rgEscolaridade"
+            android:layout_marginTop="2dp"
+    />
+
+    <RadioGroup android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rgEscolaridade"
+                android:layout_marginTop="8dp"
+                android:id="@+id/rgCasaPropria"
+    >
+        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                     android:text="@string/casaPropriaS"
+                     android:id="@+id/rdSimCasaPropria"
+        />
+        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                     android:text="@string/casaPropriaN"
+                     android:id="@+id/rdNaoCasaPropria"
+        />
+        />
+    </RadioGroup>
+
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/rgCasaPropria"
+            android:layout_marginTop="30dp"
+            android:background="#088A68"
+            android:text="Confirmar"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:padding="15dp"
+            android:id="@+id/btOK"
+    />
+
+</RelativeLayout>

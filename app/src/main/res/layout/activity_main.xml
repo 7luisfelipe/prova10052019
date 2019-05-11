@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+               android:src="@drawable/br"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="20dp"
+               android:id="@+id/logo"
+    />
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/logo"
+              android:text="@string/descVoto"
+              android:textSize="25dp"
+              android:padding="10dp"
+              android:id="@+id/txtInfo"
+    />
+
+    <RadioGroup android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtInfo"
+                android:id="@+id/rdOpcoes"
+    >
+        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/cand01"
+                     android:id="@+id/rdDoria"
+        />
+        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                     android:text="@string/cand02"
+                     android:id="@+id/rdLula"
+        />
+        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                     android:text="@string/cand03"
+        />
+        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                     android:text="@string/cand04"
+                     android:id="@+id/rdBolsonaro"
+        />
+        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                     android:text="@string/cand05"
+                     android:id="@+id/rdBranco"
+        />
+        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                     android:text="@string/cand06"
+                     android:id="@+id/rdNulo"
+        />
+    </RadioGroup>
+
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/rdOpcoes"
+            android:layout_marginTop="20dp"
+            android:background="#088A68"
+            android:text="@string/votar"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:padding="15dp"
+            android:id="@+id/btVotar"
+    />
+
+</RelativeLayout>

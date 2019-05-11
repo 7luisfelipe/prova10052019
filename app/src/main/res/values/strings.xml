@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Eleicoes</string>
+    <string name="title_activity_2">Activity2</string>
+    <string name="descVoto">Faça sua escolha...</string>
+    <string name="cand01">Doria</string>
+    <string name="cand02">Lula</string>
+    <string name="cand03">Marina</string>
+    <string name="cand04">Bolsonaro</string>
+    <string name="cand05">Branco</string>
+    <string name="cand06">Nulo</string>
+    <string name="votar">Votar</string>
+    <string name="idade">Idade</string>
+    <string name="masculino">Masculino</string>
+    <string name="feminino">Feminino</string>
+    <string name="analfabeto">Analfabeto</string>
+    <string name="ensinoMedio">Ensino Médio</string>
+    <string name="graduacao">Graduação</string>
+    <string name="posGraduacao">Pós graduação</string>
+    <string name="casaPropriaS">Possui casa própria</string>
+    <string name="casaPropriaN">Não possui casa própria</string>
+</resources>
